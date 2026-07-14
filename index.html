@@ -71,11 +71,12 @@
 <!-- MENU -->
 <section id="menu">
     <h2 class="section-title">Our Menu</h2>
+    <p style="text-align:center;color:#888;font-size:14px;margin-top:-15px;margin-bottom:20px;">Click on any item for details</p>
 
     <div class="products">
 
         <!-- SALGADINHOS -->
-        <div class="card">
+        <div class="card card-clickable" data-name="Salgadinhos">
             <img src="coxinha frita.jpeg" alt="Salgadinhos — Brazilian finger food" loading="lazy">
             <div class="card-content">
                 <h3>Salgadinhos</h3>
@@ -86,7 +87,7 @@
         </div>
 
         <!-- GOURMET BRIGADEIROS -->
-        <div class="card">
+        <div class="card card-clickable" data-name="Gourmet Brigadeiros">
             <img src="brigadeiro_header_1.jpg" alt="Gourmet Brigadeiros" loading="lazy">
             <div class="card-content">
                 <h3>Gourmet Brigadeiros</h3>
@@ -97,7 +98,7 @@
         </div>
 
         <!-- DESSERTS & PIES -->
-        <div class="card">
+        <div class="card card-clickable" data-name="Desserts &amp; Pies">
             <img src="pudim.jpeg" alt="Desserts and pies" loading="lazy">
             <div class="card-content">
                 <h3>Desserts &amp; Pies</h3>
@@ -108,7 +109,7 @@
         </div>
 
         <!-- CUPCAKES -->
-        <div class="card">
+        <div class="card card-clickable" data-name="Cupcakes">
             <img src="cupcakes_4_de_julho.jpeg" alt="Cupcakes" loading="lazy">
             <div class="card-content">
                 <h3>Cupcakes</h3>
@@ -119,7 +120,7 @@
         </div>
 
         <!-- CAKES -->
-        <div class="card">
+        <div class="card card-clickable" data-name="Naked Cakes">
             <img src="bolo_naked_de_cenoura.jpeg" alt="Naked cakes" loading="lazy">
             <div class="card-content">
                 <h3>Naked Cakes</h3>
@@ -130,7 +131,7 @@
         </div>
 
         <!-- CUSTOM THEME CAKES -->
-        <div class="card">
+        <div class="card card-clickable" data-name="Custom Theme Cakes">
             <img src="bolo_tematico_dinossauro.jpeg" alt="Custom theme cakes" loading="lazy">
             <div class="card-content">
                 <h3>Custom Theme Cakes</h3>
@@ -141,7 +142,7 @@
         </div>
 
         <!-- SEASONAL SPECIALS -->
-        <div class="card">
+        <div class="card card-clickable" data-name="Seasonal Specials">
             <img src="4july brig 1.jpeg" alt="Seasonal specials" loading="lazy">
             <div class="card-content">
                 <h3>Seasonal Specials</h3>
@@ -174,6 +175,21 @@
         </p>
     </div>
 </section>
+
+<!-- ITEM POPUP -->
+<div class="popup-overlay" id="popupOverlay">
+    <div class="popup">
+        <button class="popup-close" id="popupClose">&times;</button>
+        <div class="popup-body">
+            <h3 id="popupTitle">Salgadinhos</h3>
+            <p>We're not taking orders through this website yet — it's still under construction!</p>
+            <p>Please reach out to us on Instagram to place your order.</p>
+            <a href="https://instagram.com/mlshomemadeus" target="_blank" class="btn ig-btn">
+                &#128247; Order via Instagram
+            </a>
+        </div>
+    </div>
+</div>
 
 <!-- FOOTER -->
 <footer>

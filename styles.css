@@ -285,6 +285,68 @@ h1, h2, h3, .section-title {
     transform: translateY(-3px);
 }
 
+/* ITEM POPUP */
+.popup-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.4);
+    z-index: 500;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-overlay.open {
+    display: flex;
+}
+
+.popup {
+    background: white;
+    border-radius: 20px;
+    max-width: 400px;
+    width: 90%;
+    padding: 36px 28px 28px;
+    position: relative;
+    text-align: center;
+}
+
+.popup-close {
+    position: absolute;
+    top: 12px;
+    right: 16px;
+    background: none;
+    border: none;
+    font-size: 32px;
+    cursor: pointer;
+    color: #999;
+    line-height: 1;
+}
+
+.popup-close:hover {
+    color: var(--accent);
+}
+
+.popup-body h3 {
+    font-size: 22px;
+    color: var(--accent-dark);
+    margin-bottom: 14px;
+}
+
+.popup-body p {
+    font-size: 15px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.popup-body .ig-btn {
+    margin-top: 18px;
+    padding: 12px 28px;
+}
+
+.card-clickable {
+    cursor: pointer;
+}
+
 
 
 /* MODAL */
